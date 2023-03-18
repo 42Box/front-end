@@ -1,13 +1,24 @@
 import styles from './Quick.module.css'
 
-function Quick() {
+function Quick({ coalition }) {
     return (
         <div>
-            <div className={styles.quick}>
+            {coalition === undefined
+                ? null
+                : <div>
+                    <div className={styles.quick}>
+                        <button className={styles.myButton}>click!</button>
+                        <button className={styles.myButton}>click!</button>
+                        <button className={styles.myButton}>click!</button>
+                        <button className={styles.myButton}>click!</button>
+                    </div>
+                </div>
+            }
+
+            <div className={styles.planetBackground}></div>
+            <div className={`${styles.box} ${styles.grid}`}>
             </div>
-            <div className={styles.planetBackground}>
-                here!
-            </div>
+
         </div>
     );
 }

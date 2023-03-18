@@ -5,17 +5,13 @@ import {
 } from "react-router-dom"
 import Home from './routes/Home'
 import Box from './routes/Box'
-import Token from "./Token"
+
 function App() {
   return <Router>
     <Routes>
       <Route path="/" element={<Home />}/>
-        <Route path="/home" element={
-          <Token>
-            <Home />
-          </Token>
-          }/>
-        <Route path="/box" element={<Box />}/>
+      <Route path="/home" element={<Home />}/>
+      <Route path="/box" element={<Box />}/>
     </Routes>
   </Router>
 }

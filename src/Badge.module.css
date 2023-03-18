@@ -1,0 +1,51 @@
+.brownBox {
+	position: absolute;
+	top: 900px;
+	left: -50px;
+	width: 800px;
+	height: 800px;
+	margin: 30px;
+	border-style: solid;
+	border-width: 5px black;
+	background-color: rgb(45, 34, 19);
+	padding: 30px;
+}
+
+.pinkTransparent {
+	position: absolute;
+	top: 600px;
+	left: -50px;
+	width: 800px;
+	height: 1100px;
+	margin: 30px;
+	background: rgb(255, 161, 179);
+	background: linear-gradient(180deg, rgba(255, 161, 179, 0) 0%, rgba(255, 136, 137, 1) 38%, rgba(255, 119, 59, 1) 100%);
+}
+
+.teamInfoFooter {
+	position: absolute;
+	bottom: -850px;
+	left: 200px;
+	color: rgb(181, 179, 179);
+	text-align: center;
+	z-index: 50;
+}
+
+.blackHoleSubText {
+	position: absolute;
+	top: 140px;
+	right: 70px;
+	font-size: 12px;
+	color: rgb(231, 228, 228);
+	text-align: center;
+	z-index: 50;
+}
+
+.blackHoleText {
+	position: absolute;
+	top: 150px;
+	right: 70px;
+	color: rgb(231, 228, 228);
+	text-align: center;
+	z-index: 50;
+}
