@@ -1,0 +1,31 @@
+.planetBackground {
+    position: absolute;
+    top: 580px;
+    background-color: rgb(104, 88, 68);
+    width: 1000px;
+    height: 980px;
+    right: 190px;
+    border-radius: 500px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
+    vertical-align: middle;
+    line-height: 150px;
+    z-index: -40;
+    background-image: repeating-linear-gradient(-214deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 0px, transparent 13px);
+    background-size: 9px;
+}
+
+.quick {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 480px;
+    left: 300px;
+    /* border-radius: 10px;
+    margin: 1px; */
+    border-style: solid;
+    /* border: 1px; */
+    color: black;
+    /* background-color: white; */
+}
