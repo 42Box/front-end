@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from './Nav.module.css';
+import Title from "./Title";
 
 function Nav({ userInfo }) {
     return (
         <div className={styles.nav}>
             {(userInfo !== undefined)
-                ? <div className={styles.item1}>{userInfo.login}</div>
+                ? <Title userInfo={userInfo} />
                 : null
             }
             {(userInfo !== undefined)
