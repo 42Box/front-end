@@ -17,9 +17,9 @@ function Nav({ userInfo }) {
                             className={styles.search}
                             type="search"
                             placeholder="search (projects /intraID)" />
-                        <form name="upperSearchForm" method="get" action="result.html">
+                        {/* <form name="upperSearchForm" method="get" action="result.html"> */}
                             <button className={styles.button} type="submit">Search!</button>
-                        </form>
+                        {/* </form> */}
                     </div>
                 </form>
                 :

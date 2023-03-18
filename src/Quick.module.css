@@ -12,11 +12,11 @@
 
 .planetBackground {
     position: absolute;
-    top: 580px;
-    background-color: rgb(104, 88, 68);
+    top: 520px;
+    background-color: rgb(255, 152, 68);
     width: 1000px;
     height: 980px;
-    right: 190px;
+    right: 170px;
     border-radius: 500px;
     text-align: center;
     margin: 0 auto;

@@ -44,7 +44,7 @@ function Coalition({ coalition }) {
                 <div>
 
                     <div className={styles.myCoalition}>
-                        {coalition[0].name}
+                        {/* {coalition[0].name} */}
                     </div>
 
                     <div className={styles.coalition}>
@@ -55,7 +55,7 @@ function Coalition({ coalition }) {
                     </div>
 
                     <div className={styles.item2}>
-                        <img className={styles.logo} src={coalition[0].image_url} />
+                        {/* <img className={styles.logo} src={coalition[0].image_url} /> */}
                     </div>
                 </div>
                 : null
