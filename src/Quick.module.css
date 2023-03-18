@@ -1,3 +1,15 @@
+/* 격자무늬  */
+.box {
+    height: 1540px;
+    /* border:1px solid silver; */
+  }
+  .grid {
+    background-size: 10px, 30px, 10px 10px, 30px 30px;
+    background-image: linear-gradient(90deg, #00000004 1px, transparent 1px), linear-gradient(90deg, #00000004 1px, transparent 1px), linear-gradient(#00000004 1px, transparent 1px), linear-gradient(#00000004 1px, transparent 1px);
+  }
+/* 격자무늬  */
+
+
 .planetBackground {
     position: absolute;
     top: 580px;
@@ -12,7 +24,7 @@
     vertical-align: middle;
     line-height: 150px;
     z-index: -40;
-    background-image: repeating-linear-gradient(-214deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 0px, transparent 13px);
+    background-image: repeating-linear-gradient(-214deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 0px, transparent 13px);
     background-size: 9px;
 }
 
@@ -20,12 +32,56 @@
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 480px;
+    top: 550px;
     left: 300px;
     /* border-radius: 10px;
     margin: 1px; */
-    border-style: solid;
+    /* border-style: solid; FIXME : erase later!!! */
     /* border: 1px; */
     color: black;
     /* background-color: white; */
 }
+
+/* button */
+.myButton {
+    text-align: center;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 22px;
+    margin: 7px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    background-color: #e9e9e9;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/* 
+.star {
+    position: static;
+    top: 300px;
+    left: 300px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    filter: blur(5px);
+    animation: blink 1s steps(5) infinite;
+    z-index: 40;
+} 
+*/

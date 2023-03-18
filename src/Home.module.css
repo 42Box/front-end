@@ -1,8 +1,4 @@
 body {
-    /* background-image: url(/public/images/cosmic.jpg); */
-
-    /* background: rgb(34, 193, 195);
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(0, 0, 0, 1) 100%); */
 
     background: rgb(239, 255, 161);
     background: linear-gradient(0deg, rgba(239, 255, 161, 1) 0%, rgba(246, 183, 116, 1) 68%, rgba(255, 90, 59, 1) 100%);
