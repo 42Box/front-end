@@ -17,20 +17,18 @@ function Nav({ userInfo }) {
                             className={styles.search}
                             type="search"
                             placeholder="search (projects /intraID)" />
-                        <button className={styles.button} type="submit">Search!</button>
+                        <form name="upperSearchForm" method="get" action="result.html">
+                            <button className={styles.button} type="submit">Search!</button>
+                        </form>
                     </div>
                 </form>
                 :
                 <div className={styles.item3}>
-                    <form name="upperSearchForm" method="get" action="result.html">
-                        <fieldset>
-                            <button className={styles.button}>
-                                <Link to="https://api.intra.42.fr/oauth/authorize?client_id=u-s4t2ud-b0c9174e63ee41df6b61db393b535bfc1e923ff7bf4166dddee4ddcb231d7533&redirect_uri=http%3A%2F%2Flocalhost%3A4242%2Fhome&response_type=code">
-                                    LOGIN
-                                </Link>
-                            </button>
-                        </fieldset>
-                    </form>
+                    <Link to={`https://api.intra.42.fr/oauth/authorize?client_id=${process.env.REACT_APP_UID}&redirect_uri=http%3A%2F%2Flocalhost%3A4242%2Fhome&response_type=code`}>
+                        <button className={styles.button}>
+                                LOGIN
+                        </button>
+                    </Link>
                 </div>
             }
             {(userInfo !== undefined)
