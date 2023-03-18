@@ -39,7 +39,7 @@ function Home () {
         if (token) {
             getUserInfo();  
         }
-    }, [localStorage]);
+    }, []);
     useEffect(() => {
         if (userInfo !== undefined) {
             getCoalition();

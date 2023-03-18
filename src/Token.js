@@ -35,8 +35,7 @@ const Token = ({children}) => {
               },
           })
       ).json();
-      localStorage.setItem('token', json.access_token).then(navigate('/'));
-      navigate('/');
+      localStorage.setItem('token', json.access_token);
   }
   useEffect(() => {
         getToken();
