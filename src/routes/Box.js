@@ -1,3 +1,4 @@
+import styles from './Box.module.css'
 function Box () {
     const onClick = () => {
         localStorage.removeItem('token')
@@ -8,6 +9,7 @@ function Box () {
             {/* backgroundBegie */}
             <div className={styles.backgroundBegie}>
                 <div className={styles.wrapper}>
+                    <div onClick={onClick}><button>Reset</button></div>
                     <div className={styles.block}></div>
                     <div className={styles.welcomefont}>
                         welcome to...
