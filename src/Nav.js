@@ -1,7 +1,13 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from './Nav.module.css';
 
 function Nav({ userInfo }) {
+    const [search, setSearch] = useState();
+    const onChange = (event) => {
+        setSearch(event.target.value);
+        console.log(search);
+    }
     return (
         <div className={styles.nav}>
             {(userInfo !== undefined)
@@ -10,18 +16,20 @@ function Nav({ userInfo }) {
             }
             {(userInfo !== undefined)
                 ?
-                <form>
-                    {/* TODO : https://www.daleseo.com/react-forms/ 참고!*/}
+                // <form>
+                    // TODO : https://www.daleseo.com/react-forms/ 참고!
                     <div className={styles.item2}>
                         <input
+                            onChange={onChange}
+                            value={search}
                             className={styles.search}
                             type="search"
                             placeholder="search (projects /intraID)" />
-                        {/* <form name="upperSearchForm" method="get" action="result.html"> */}
-                            <button className={styles.button} type="submit">Search!</button>
-                        {/* </form> */}
+                        <Link to={`https://profile.intra.42.fr/searches/search?query=${search}`}>
+                            <button className={styles.button}>Search!</button>
+                        </Link>
                     </div>
-                </form>
+                // </form>
                 :
                 <div className={styles.item3}>
                     <Link to={`https://api.intra.42.fr/oauth/authorize?client_id=${process.env.REACT_APP_UID}&redirect_uri=http%3A%2F%2Flocalhost%3A4242%2Fhome&response_type=code`}>
