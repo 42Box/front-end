@@ -16,6 +16,13 @@ function Badge({ userInfo }) {
 						<div className={styles.blackHoleText}>
 							<Blackhole userInfo={userInfo} />
 						</div>
+                		<img className={styles.imageSearching} src="/images/png/searching.png" />
+						<div className={styles.text}>
+							'팍스'가 '박스'를 뜯는 중 <br/>
+							. <br/>
+							. <br/>
+							. <br/>
+						</div>
 
 					</div>
 					: //로그인 전
@@ -30,7 +37,6 @@ function Badge({ userInfo }) {
 						</div>
 					</div>
 			}
-
 		</div>
 	);
 }

@@ -7,6 +7,7 @@ import Body from '../Body';
 function Home () {
     const navigate = useNavigate();
     const token = localStorage.getItem('token');
+    const [loading, setLoading] = useState(true);
     const [userInfo, setUserInfo] = useState();
     const [coalition, setCoalition] = useState();
     const getUserInfo = async () => {
@@ -51,10 +52,24 @@ function Home () {
             getCoalition();
         }
     }, [userInfo]);
+    useEffect(() => {
+        if (coalition) {
+            setLoading(false);
+        }
+    }, [coalition])
     return (
         <div className={styles.background}>
-            <Nav userInfo={userInfo} />
-            <Body userInfo={userInfo} coalition={coalition}/>
+            { token && loading ?
+            <div>
+                <img className={styles.imageSearching} src="/images/png/searching.png" />
+                <h1 className={styles.loading}>Loading...</h1>
+            </div>
+            :
+            <div>
+                <Nav userInfo={userInfo} />
+                <Body userInfo={userInfo} coalition={coalition}/>
+            </div>
+            }
         </div>
     );
 }

@@ -59,3 +59,25 @@
 	height: 60px;
 	z-index: 10;
 }
+
+.imageSearching {
+	position: absolute;
+	z-index: 20;
+	top: 1100px;
+	left: 120px;
+	width: 530px;
+	text-align: center;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+.text {
+	position: absolute;
+	z-index: 20;
+	text-align: center;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 1500px;
+	left: 310px;
+	line-height: 30px;
+	color: antiquewhite;
+}

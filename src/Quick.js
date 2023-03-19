@@ -47,20 +47,20 @@ function Quick({ coalition }) {
                             className={styles.input}
                             value={name} 
                             type="text" 
-                            placeholder="Shortcut Name"/>
+                            placeholder="Bookmark Name"/>
                             <input 
                             onChange={onUrlChange} 
                             className={styles.input}
                             value={url} 
                             type="text" 
-                            placeholder="Shortcut URL"/>
-                            <button className={styles.addButton}>+</button>
+                            placeholder="Bookmark URL"/>
+                            <button className={`${styles.custom} ${styles.btn2}`}><span>+</span></button>
                         </form>
                         <div className={styles.item}>
                         {urls.map((item, index) => (
                             <div>
-                                <Link to={item.text}><button className={styles.myButton} key={index}>{item.name}</button></Link>
-                                <button onClick={() => handleDelete(index)} className={styles.deleteButton}>x</button>
+                                <Link to={item.text}><button className={`${styles.custom_btn} ${styles.btn1}`} key={index}><span>{item.text}</span><span>{item.name}</span></button></Link>
+                                <button onClick={() => handleDelete(index)} className={`${styles.custom} ${styles.btn3}`}><span>X</span></button>
                             </div>
                         ))}
                         </div>
