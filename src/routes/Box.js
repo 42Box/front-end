@@ -9,7 +9,6 @@ function Box() {
             {/* backgroundBegie */}
             <div className={styles.background}>
                 <div className={styles.wrapper}>
-                    <div onClick={onClick}><button>Reset</button></div>
                     <div className={styles.block}></div>
                     <div className={styles.welcomefont}>
                         welcome to...
