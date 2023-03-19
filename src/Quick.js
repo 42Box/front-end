@@ -1,21 +1,31 @@
 import { useEffect, useState } from 'react';
-import { json, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from './Quick.module.css';
 
 function Quick({ coalition }) {
     const [urls, setUrls] = useState([]);
     const [url, setUrl] = useState("");
-    const onChange = (event) => {
+    const [name, setName] = useState("");
+    const onUrlChange = (event) => {
       setUrl(event.target.value);
-    }
+    };
+    const onNameChange = (event) => {
+        setName(event.target.value);
+    };
     const onSubmit = (event) => {
       event.preventDefault();
-      if (url === "") {
+      if (url === "" || name === "") {
         return ;
       }
-      setUrls([...urls, { text: url }]);
+      setUrls([...urls, { text: url, name: name }]);
       setUrl("");
-    }
+      setName("");
+    };
+    const handleDelete = (index) => {
+        const updatedUrls = urls.filter((url, i) => i !== index);
+        setUrls(updatedUrls);
+        localStorage.setItem('urls', JSON.stringify(updatedUrls));
+    };
     useEffect(() => {
         const storedUrls = localStorage.getItem('urls');
         if (storedUrls) {
@@ -31,15 +41,29 @@ function Quick({ coalition }) {
                 ? null
                 : <div>
                     <div className={styles.quick}>
-                        <form onSubmit={onSubmit}>
+                        <form className={styles.form} onSubmit={onSubmit}>
                             <input 
-                            onChange={onChange} 
+                            onChange={onNameChange} 
+                            className={styles.input}
+                            value={name} 
+                            type="text" 
+                            placeholder="Shortcut Name"/>
+                            <input 
+                            onChange={onUrlChange} 
+                            className={styles.input}
                             value={url} 
                             type="text" 
-                            placeholder="input url"/>
-                            <button>ADD</button>
+                            placeholder="Shortcut URL"/>
+                            <button className={styles.addButton}>+</button>
                         </form>
-                        {urls.map((item, index) => (<Link to={item}><button className={styles.myButton} key={index}>{item.text}</button></Link>))}
+                        <div className={styles.item}>
+                        {urls.map((item, index) => (
+                            <div>
+                                <Link to={item.text}><button className={styles.myButton} key={index}>{item.name}</button></Link>
+                                <button onClick={() => handleDelete(index)} className={styles.deleteButton}>x</button>
+                            </div>
+                        ))}
+                        </div>
                     </div>
                 </div>
             }
