@@ -45,7 +45,7 @@
 /* (image) tree */
 .layer1 {
     position: absolute;
-    z-index: -30;
+    z-index: 1;
     width: 950px;
     object-fit: contain;
     top: -250px;
@@ -55,7 +55,7 @@
 /* (image) fox in the box */
 .layer2 {
     position: absolute;
-    z-index: -20;
+    z-index: 2;
     width: 200px;
     object-fit: contain;
     top: 500px;
