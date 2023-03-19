@@ -4,7 +4,7 @@ function Coalition({ coalition }) {
     return (
         <div>
             <img className={styles.layer1} src="/images/png/tree.png" />
-            <img className={styles.layer2} src="/images/png/cute_fox.png" />
+            <img className={styles.layer2} src="/images/png/inside_box.png" />
             <img className={styles.layer3} src="/images/png/42box_logo.png" />
             {/* {coalition !== undefined
                 ? <img className={styles.layer3} src="/images/png/42box_logo.png" />
@@ -51,7 +51,6 @@ function Coalition({ coalition }) {
                     </div>
 
                     <div className={styles.coalitionInsideBoxMain}>
-                        {coalition[0].name}
                     </div>
 
                     <div className={styles.item2}>
