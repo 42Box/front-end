@@ -46,16 +46,14 @@ function Coalition({ coalition }) {
                     <div className={styles.myCoalition}>
                         {coalition[0].name}
                     </div>
-
-                    <div className={styles.coalition}>
-                    </div>
+                    {/* <div className={styles.coalition}> */}
+                        <textarea className={styles.coalition} placeholder="📝 이곳을 메모장으로 활용해보세요.">
+                        </textarea>
+                    {/* </div> */}
 
                     <div className={styles.coalitionInsideBoxMain}>
                     </div>
-
-                    <div className={styles.item2}>
-                        <img className={styles.logo} src={coalition[0].image_url} />
-                    </div>
+                    <img className={styles.logo} src={coalition[0].image_url} />
                 </div>
                 : null
             }
