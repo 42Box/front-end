@@ -1,7 +1,14 @@
-function Box () {
+import { useEffect, useState } from "react";
+import styles from './Box.module.css'
+
+function Box() {
     return (
-        null
+        <div >
+            <div>
+                Hello World!
+            </div>
+        </div>
     );
 }
 
-export default Box
+export default Box;
