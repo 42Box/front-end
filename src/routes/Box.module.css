@@ -1,14 +1,19 @@
-.backgroundBegie {
-	/* background-color: rgb(149, 117, 87); */
+body {
 	background: rgb(176, 82, 49);
 	background: radial-gradient(circle, rgba(176, 82, 49, 1) 0%, rgba(4, 116, 112, 1) 100%);
-	height: 900px;
+
 }
 
+/* background-color: rgb(149, 117, 87); */
+.background {
+	height: 3000px;
+}
+
+/*
 .backgroundGreen{
 	background:#047470;
 	height: 900px;
-}
+} */
 
 .colorAntiquewhite {
 	color: antiquewhite;
@@ -45,8 +50,165 @@
 	color: antiquewhite;
 }
 
+.text2 {
+	position: absolute;
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 900px;
+	left: 250px;
+	text-align: center;
+	line-height: 30px;
+	color: antiquewhite;
+}
 
+.text3 {
+	position: absolute;
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 1250px;
+	left: 70px;
+	width: 630px;
+	text-align: center;
+	line-height: 30px;
+	color: antiquewhite;
+}
 
+.text4 {
+	position: absolute;
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 1850px;
+	left: 80px;
+	width: 630px;
+	text-align: center;
+	line-height: 30px;
+	color: antiquewhite;
+}
+
+.text5 {
+	position: absolute;
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 2300px;
+	left: 230px;
+	text-align: center;
+	line-height: 30px;
+	color: antiquewhite;
+}
+
+.text6 {
+	position: absolute;
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 2870px;
+	left: 290px;
+	text-align: center;
+	line-height: 30px;
+	color: antiquewhite;
+}
+
+.text7 {
+	position: absolute;
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 3600px;
+	left: 220px;
+	text-align: center;
+	line-height: 30px;
+	color: antiquewhite;
+}
+
+.team42Title {
+	position: absolute;
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 4000px;
+	left: 300px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 30px;
+	color: antiquewhite;
+}
+
+.text8 {
+	position: absolute;
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 4130px;
+	left: 190px;
+	text-align: center;
+	line-height: 30px;
+	color: antiquewhite;
+}
+
+.text9 {
+	position: absolute;
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 4450px;
+	left: 170px;
+	text-align: center;
+	line-height: 30px;
+	color: antiquewhite;
+}
+
+.text10 {
+	position: absolute;
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 5300px;
+	left: 200px;
+	text-align: center;
+	line-height: 30px;
+	color: antiquewhite;
+}
+
+.teamInfoFooter {
+	position: absolute;
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 5480px;
+	left: 200px;
+	text-align: center;
+	line-height: 30px;
+	color: rgb(172, 170, 168);
+}
+
+.imageGG {
+	position: absolute;
+	z-index: 20;
+	top: 2400px;
+	left: 80px;
+	width: 300px;
+	text-align: center;
+}
+
+.imageLib {
+	position: absolute;
+	z-index: 20;
+	top: 2400px;
+	left: 400px;
+	width: 300px;
+	text-align: center;
+}
+
+.imageHome {
+	position: absolute;
+	z-index: 20;
+	top: 3000px;
+	left: 70px;
+	width: 630px;
+	text-align: center;
+}
+
+.imageSearching {
+	position: absolute;
+	z-index: 20;
+	top: 4750px;
+	left: 70px;
+	width: 630px;
+	text-align: center;
+}
 
 /* title */
 .titleText {
@@ -157,8 +319,8 @@
 .mainImg1 {
 	position: absolute;
 	z-index: 1;
-	width: 200px;
+	width: 130px;
 	object-fit: contain;
-	top: 200px;
-	right: 270px;
+	top: 260px;
+	right: 310px;
 }
