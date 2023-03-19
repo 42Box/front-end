@@ -130,8 +130,9 @@
 */
 
 .input {
-    width: 340px;
+    width: 330px;
     height: 20px;
+    margin-right: 7px;
     border-radius: 10px;
     text-align: center;
     font-family: serif;
@@ -164,3 +165,240 @@
     background-color: rgba(204, 204, 204, 0.5);
     border-radius: 6px;
 }
+
+.custom_btn {
+    width: 300px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 30px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+
+  .btn1{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+  .btn1 span {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    border: 2px solid #000;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .btn1 span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn1 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn1:hover span:nth-child(1) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .btn1:hover span:nth-child(2) {
+    background: #e0e5ec;
+    color: #e0e5ec;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+  
+  .custom {
+    width: 30px;
+    height: 25px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  
+  .btn3 {
+    background: rgb(238, 44, 0);
+  background: linear-gradient(0deg, rgb(238, 44, 0) 0%, rgb(251, 44, 2) 100%);
+    width: 30px;
+    height: 25px;
+    line-height: 30px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn3:before,
+  .btn3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgb(251, 44, 2);
+    transition: all 0.3s ease;
+  }
+  .btn3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn3:hover:before {
+    height: 100%;
+  }
+  .btn3:hover:after {
+    width: 100%;
+  }
+  .btn3 span:hover{
+     color: rgb(251, 44, 2);
+  }
+  .btn3 span:before,
+  .btn3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgb(251, 44, 2);
+    transition: all 0.3s ease;
+  }
+  .btn3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn3 span:hover:before {
+    height: 100%;
+  }
+  .btn3 span:hover:after {
+    width: 100%;
+  }
+
+    .btn2 {
+    background: rgb(111, 238, 0);
+  background: linear-gradient(0deg, rgb(111, 238, 0) 0%, rgb(111, 251, 2) 100%);
+    width: 30px;
+    height: 28px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    line-height: 30px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn2 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn2:before,
+  .btn2:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgb(111, 251, 2);
+    transition: all 0.3s ease;
+  }
+  .btn2:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn2:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn2:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn2:hover:before {
+    height: 100%;
+  }
+  .btn2:hover:after {
+    width: 100%;
+  }
+  .btn2 span:hover{
+     color: rgb(111, 251, 2);
+  }
+  .btn2 span:before,
+  .btn2 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgb(111, 251, 2);
+    transition: all 0.3s ease;
+  }
+  .btn2 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn2 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn2 span:hover:before {
+    height: 100%;
+  }
+  .btn2 span:hover:after {
+    width: 100%;
+  }

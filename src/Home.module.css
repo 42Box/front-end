@@ -10,3 +10,23 @@
     /* margin: 0;
     padding: 0; */
 }
+
+.imageSearching {
+	position: absolute;
+	z-index: 20;
+    top: 40px;
+    left: 60px;
+	width: 630px;
+	text-align: center;
+}
+
+.loading {
+    position: absolute;
+    top: 470px;
+    left: 120px;
+    text-align: center;
+    font-family: monaco;
+    font-size: 80px;
+    letter-spacing: 10px;
+	color: antiquewhite;
+}

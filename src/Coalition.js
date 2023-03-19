@@ -1,6 +1,19 @@
+import { useEffect, useState } from 'react';
 import styles from './Coalition.module.css'
 
 function Coalition({ coalition }) {
+    const [memo, setMemo] = useState("");
+    const onChange = (event) => {
+        setMemo(event.target.value);
+        localStorage.setItem("memo", event.target.value);
+    };
+    useEffect(() => {
+        const storedMemo = localStorage.getItem("memo");
+        if (storedMemo) {
+            setMemo(storedMemo);
+        }
+
+    }, []);
     return (
         <div>
             <img className={styles.layer1} src="/images/png/tree.png" />
@@ -47,7 +60,11 @@ function Coalition({ coalition }) {
                         {coalition[0].name}
                     </div>
                     {/* <div className={styles.coalition}> */}
-                        <textarea className={styles.coalition} placeholder="📝 이곳을 메모장으로 활용해보세요.">
+                        <textarea
+                        value={memo}
+                        onChange={onChange}
+                        className={styles.coalition}
+                        placeholder="📝 나만의 작은 메모장">
                         </textarea>
                     {/* </div> */}
 
