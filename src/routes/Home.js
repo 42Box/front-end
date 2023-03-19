@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styles from '../Home.module.css';
 import Nav from '../Nav';
 import Body from '../Body';
 
 function Home () {
+    const navigate = useNavigate();
     const token = localStorage.getItem('token');
     const [userInfo, setUserInfo] = useState();
     const [coalition, setCoalition] = useState();
@@ -19,6 +21,10 @@ function Home () {
                 },
             })
         ).json();
+        if (!json.login) {
+            localStorage.removeItem('token');
+            navigate('/');
+        }
         setUserInfo(json);
     }
     const getCoalition = async () => {

@@ -66,7 +66,7 @@
 /* box42, white logo */
 .layer3 {
     position: absolute;
-    z-index: -10;
+    z-index: 3;
     width: 200px;
     object-fit: contain;
     top: 240px;
@@ -108,8 +108,8 @@
 /* coalition logo : gun gon gam lee*/
 .logo {
     position: absolute;
-    left: 0px;
-    top: 40px;
+    left: 585px;
+    top: 430px;
     width: 100px;
 
     /* object-fit: contain;
@@ -118,8 +118,8 @@
 
 .myCoalition {
     position: absolute;
-    left: 100px;
-    top: 90px;
+    left: 530px;
+    top: 470px;
     font-size: 30px;
     font-family: cursive;
     color: white;

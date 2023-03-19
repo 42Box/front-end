@@ -8,10 +8,8 @@ function Badge({ userInfo }) {
 				userInfo !== undefined ?
 					// 로그인 후
 					<div>
-						<div className={styles.pinkTransparent}>
-						</div>
-
-						Blackhole(userInfo);
+						<img className={styles.blackHoleImg} src="/images/png/black_hole.png"/>
+						<div className={styles.pinkTransparent}></div>
 						<div className={styles.blackHoleSubText}>
 							Blackhole
 						</div>

@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
-import styles from './Box.module.css'
-
-function Box() {
+function Box () {
+    const onClick = () => {
+        localStorage.removeItem('token')
+        localStorage.removeItem('urls')
+    }
     return (
         <div>
             {/* backgroundBegie */}
