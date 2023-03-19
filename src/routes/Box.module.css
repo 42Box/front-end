@@ -1,11 +1,164 @@
-/* .mainPaperBoxBackground {
-	position: absolute;
-	width: 768px;
-	height: 1400px;
-	top: 0px;
-	background-color: whitesmoke;
-} */
+.backgroundBegie {
+	/* background-color: rgb(149, 117, 87); */
+	background: rgb(176, 82, 49);
+	background: radial-gradient(circle, rgba(176, 82, 49, 1) 0%, rgba(4, 116, 112, 1) 100%);
+	height: 900px;
+}
 
-body{
-	background-color: white;
+.backgroundGreen{
+	background:#047470;
+	height: 900px;
+}
+
+.colorAntiquewhite {
+	color: antiquewhite;
+}
+
+/* font */
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+.fontKor {
+	z-index: 20;
+	font-family: 'Jeju Myeongjo', serif;
+}
+
+.welcomefont {
+	position: absolute;
+	z-index: 20;
+	text-align: center;
+	font-family: 'Jeju Myeongjo', serif;
+	left: 300px;
+}
+
+.block {
+	padding: 50px;
+}
+
+.text1 {
+	position: absolute;
+	z-index: 20;
+	text-align: center;
+	font-family: 'Jeju Myeongjo', serif;
+	top: 500px;
+	left: 210px;
+	line-height: 30px;
+	color: antiquewhite;
+}
+
+
+
+
+/* title */
+.titleText {
+	padding: 10px;
+	text-align: center;
+	font-size: 60px;
+	z-index: 10;
+	line-height: 80px;
+	color: antiquewhite;
+	/* top: 30px;
+	left: 80px; */
+}
+
+.subTitleText {
+	text-align: center;
+	font-size: 40px;
+	z-index: 10;
+	line-height: 80px;
+	color: antiquewhite;
+	/* top: 30px;
+	left: 80px; */
+}
+
+.serifFont {
+	font-family: serif;
+}
+
+.cursiveFont {
+	font-family: cursive;
+}
+
+.authorText {
+	position: absolute;
+	padding: 80px;
+	text-align: center;
+	font-size: 16px;
+	top: 100px;
+
+}
+
+
+/* cartoon image */
+.cut1 {
+	position: absolute;
+
+	z-index: 1;
+	width: 700px;
+	object-fit: contain;
+	top: 350px;
+	right: 20px;
+}
+
+.cut2 {
+	position: absolute;
+
+	z-index: 1;
+	position: center;
+	width: 330px;
+	object-fit: contain;
+	top: 670px;
+	left: 230px;
+}
+
+.cut3 {
+	position: absolute;
+
+	z-index: 1;
+	width: 700px;
+	object-fit: contain;
+	top: 1000px;
+	right: 20px;
+}
+
+.cut4 {
+	position: absolute;
+
+	z-index: 1;
+	width: 700px;
+	object-fit: contain;
+	top: 1400px;
+	right: 20px;
+}
+
+
+.box {
+	height: 2500px;
+}
+
+.grid {
+	background-size: 10px, 30px, 10px 10px, 30px 30px;
+	background-image: linear-gradient(90deg, #00000004 1px, transparent 1px), linear-gradient(90deg, #00000004 1px, transparent 1px), linear-gradient(#00000004 1px, transparent 1px), linear-gradient(#00000004 1px, transparent 1px);
+}
+
+.wrapper {
+	position: relative;
+}
+
+.visibleHidden {
+	visibility: hidden;
+}
+
+.visibleVisible {
+	visibility: visible;
+}
+
+
+/* main images */
+.mainImg1 {
+	position: absolute;
+	z-index: 1;
+	width: 200px;
+	object-fit: contain;
+	top: 200px;
+	right: 270px;
 }
