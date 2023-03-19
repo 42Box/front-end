@@ -75,20 +75,22 @@ function Box() {
                 <img className={styles.imageHome} src="/images/box_screenshot/home_ui.png" />
             </div>
             <div className={styles.text7}>
-                메인 페이지에서는 3가지 기능을 사용할 수 있어요! <br />
-                .<br />
-                .<br />
-                1) 메모장 📝 기능 (TO-DO list 로 사용 가능!👍)<br />
-                2) 북마크 🔖 기능 (링크를 저장할 수 있음!👍)<br />
-                3) 나의 블랙홀 🪐, 몇 일 남았는지 확인 가능!👍<br /><br />
-                (데이터는 본인의 로컬 스토리지에 저장됩니다.)<br /><br /><br /><br />
+                메인 페이지에서는 4가지 기능을 사용할 수 있어요! <br />
+                <br />
+                1️⃣ 인트라 검색🔎 기능 (맨 위의 search 박스로 검색 가능!👍)<br />
+                2️⃣ 메모장 📝 기능 (TO-DO list 로 사용 가능!👍)<br />
+                * 뒤로가기 : 42Box 로고(맨 위에 있는 거)를 '3번' 눌러주세요!<br />
+                3️⃣ 북마크 🔖 기능 (링크를 저장할 수 있음!👍)<br />
+                * [name]에 보여질 이름을, [URL]에 저장할 URL을 넣어주세요!<br />
+                4️⃣ 나의 블랙홀 🪐, 몇 일 남았는지 확인 가능!👍<br /><br />
+                (데이터는 본인의 로컬 스토리지에 저장됩니다.)<br /><br /><br />
                 ---
             </div>
             <div className={styles.team42Title}>
                 Team, 42Box
             </div>
             <div className={styles.text8}>
-            저희 42Box Team은, 모든 카뎃 여러분들이 42Box의<br />
+                저희 42Box Team은, 모든 카뎃 여러분들이 42Box의<br />
                 나만의 메모장과 북마크들, 한번에 나열된 42서비스들을<br />
                 통해 오늘도 쾌적한 하루가 되었으면 하는 바람이 있습니다!<br /><br />
 
