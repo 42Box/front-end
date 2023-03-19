@@ -1,6 +1,10 @@
 function Box () {
+    const onClick = () => {
+        localStorage.removeItem('token')
+        localStorage.removeItem('urls')
+    }
     return (
-        null
+        <button onClick={onClick}>clear local storage</button>
     );
 }
 
