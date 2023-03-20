@@ -12,8 +12,8 @@ function App() {
   return <Router>
     <Routes>
       <Route path="/" element={<Home />}/>
-      <Route path="/#/home" element={<Token />}/>
-      <Route path="/#/box" element={<Box />}/>
+      <Route path="/home" element={<Token />}/>
+      <Route path="/box" element={<Box />}/>
     </Routes>
   </Router>
 }
