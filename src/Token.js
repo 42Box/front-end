@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { Navigate, useSearchParams, useNavigate } from 'react-router-dom'
+import Home from './routes/Home'
 
-const Token = ({children}) => {
+const Token = () => {
+    const [token, setToken] = useState();
     const [searchParams] = useSearchParams();
     const code = searchParams.get("code");
     const navigate = useNavigate();
@@ -36,13 +38,22 @@ const Token = ({children}) => {
           })
       ).json();
       localStorage.setItem('token', json.access_token);
+      setToken(json.access_token);
   }
   useEffect(() => {
         getToken();
   }, [code]);
   
 //  return null
-  return <Navigate to="/" />
+  return (
+    <div>
+        {token ?
+            <Navigate to="/" />
+        :
+            <Home />
+        }
+    </div>
+  );
 //  return token? React.cloneElement(children, { token }) : null
 }
 
