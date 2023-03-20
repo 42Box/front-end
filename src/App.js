@@ -8,11 +8,11 @@ import Box from './routes/Box'
 import Token from './Token'
 
 function App() {
-  return <Router>
+  return <Router basename={process.env.PUBLIC_URL}>
     <Routes>
-      <Route path={process.env.PUBLIC_URL + "/"} element={<Home />}/>
-      <Route path={process.env.PUBLIC_URL + "/home"} element={<Token />}/>
-      <Route path={process.env.PUBLIC_URL + "/box"} element={<Box />}/>
+      <Route path="/" element={<Home />}/>
+      <Route path="/home" element={<Token />}/>
+      <Route path="/box" element={<Box />}/>
     </Routes>
   </Router>
 }
