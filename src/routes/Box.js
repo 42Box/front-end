@@ -20,7 +20,7 @@ function Box() {
                         카뎃을 위한 사용 설명서
                     </div>
 
-                    <img className={styles.mainImg1} src="/images/png/opening_box.png" />
+                    <img className={styles.mainImg1} src={process.env.PUBLIC_URL + "/images/png/opening_box.png"} />
                 </div>
 
                 <div className={styles.text1}>
@@ -39,7 +39,7 @@ function Box() {
             <div className={styles.text2}>
                 <div className={`${styles.colorAntiquewhite} ${styles.fontKor}`}>
                     먼저, 주인공 [박스]부터 소개해 드릴게요!<br />
-                    <img src="/images/box_screenshot/box_icon.png" />
+                    <img src={process.env.PUBLIC_URL + "/images/box_screenshot/box_icon.png"} />
                 </div>
                 이 박스는 42Box으로 향하는 문입니다!<br />
                 더블클릭하시면 42Box가 실행이 돼요.<br />
@@ -47,7 +47,7 @@ function Box() {
                 점이 빨리 로딩됩니다!
             </div>
 
-            <img className={styles.text3} src="/images/box_screenshot/42box_main_page.png" />
+            <img className={styles.text3} src={process.env.PUBLIC_URL + "/images/box_screenshot/42box_main_page.png"} />
             <div className={styles.text4}>
                 메인 페이지입니다!<br /><br />
                 [사이드 바]부터 소개해 드릴게요! 사이드 바 버튼을 <br />
@@ -63,8 +63,8 @@ function Box() {
                 그럼, 이렇게 박스 안에서 여러가지 프로그램을<br />
                 바로바로 사용할 수 있겠죠?(야호~)✨<br />
             </div>
-            <img className={styles.imageGG} src="/images/box_screenshot/image_gg.png" />
-            <img className={styles.imageLib} src="/images/box_screenshot/image_lib.png" />
+            <img className={styles.imageGG} src={process.env.PUBLIC_URL + "/images/box_screenshot/image_gg.png"} />
+            <img className={styles.imageLib} src={process.env.PUBLIC_URL + "/images/box_screenshot/image_lib.png"} />
 
             <div className={styles.text6}>
                 이제 슬슬 메인 페이지에 대해서 <br />
@@ -72,7 +72,7 @@ function Box() {
             </div>
 
             <div>
-                <img className={styles.imageHome} src="/images/box_screenshot/home_ui.png" />
+                <img className={styles.imageHome} src={process.env.PUBLIC_URL + "/images/box_screenshot/home_ui.png"} />
             </div>
             <div className={styles.text7}>
                 메인 페이지에서는 4가지 기능을 사용할 수 있어요! <br />
@@ -109,7 +109,7 @@ function Box() {
                 제공하려는 계획이 있습니다!<br />
             </div>
             <div>
-                <img className={styles.imageSearching} src="/images/png/searching.png" />
+                <img className={styles.imageSearching} src={process.env.PUBLIC_URL + "/images/png/searching.png"} />
             </div>
             <div className={styles.text10}>
                 이 순간에도 열심히 박스를 뜯고있는 팍스를 위해...<br />
@@ -141,10 +141,10 @@ function Box() {
                     </div>
 
                     <div>
-                        <img className={styles.cut1} src="/images/cartoon/cut1.png" />
-                        <img className={styles.cut2} src="/images/cartoon/cut2.png" />
-                        <img className={styles.cut3} src="/images/cartoon/cut3.png" />
-                        <img className={styles.cut4} src="/images/cartoon/cut4.png" />
+                        <img className={styles.cut1} src={process.env.PUBLIC_URL + "/images/cartoon/cut1.png"} />
+                        <img className={styles.cut2} src={process.env.PUBLIC_URL + "/images/cartoon/cut2.png"} />
+                        <img className={styles.cut3} src={process.env.PUBLIC_URL + "/images/cartoon/cut3.png"} />
+                        <img className={styles.cut4} src={process.env.PUBLIC_URL + "/images/cartoon/cut4.png"} />
                     </div>
 
                 </div>

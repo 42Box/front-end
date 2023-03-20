@@ -24,7 +24,7 @@ const Token = () => {
           code + 
           '&' +
           'redirect_uri=' +
-          'http://localhost:4242/home' +
+          process.env.REACT_APP_URL +
           '&' +
           'scope=public';
       const json = await (

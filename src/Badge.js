@@ -8,7 +8,7 @@ function Badge({ userInfo }) {
 				userInfo !== undefined ?
 					// 로그인 후
 					<div>
-						<img className={styles.blackHoleImg} src="/images/png/black_hole.png"/>
+						<img className={styles.blackHoleImg} src={process.env.PUBLIC_URL + "/images/png/black_hole.png"}/>
 						<div className={styles.pinkTransparent}></div>
 						<div className={styles.blackHoleSubText}>
 							Blackhole
@@ -16,7 +16,7 @@ function Badge({ userInfo }) {
 						<div className={styles.blackHoleText}>
 							<Blackhole userInfo={userInfo} />
 						</div>
-                		<img className={styles.imageSearching} src="/images/png/searching.png" />
+                		<img className={styles.imageSearching} src={process.env.PUBLIC_URL + "/images/png/searching.png"} />
 						<div className={styles.text}>
 							'팍스'가 '박스'를 뜯는 중 <br/>
 							. <br/>
