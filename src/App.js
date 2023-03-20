@@ -9,7 +9,7 @@ import Token from './Token'
 
 function App() {
   return <Router>
-    <Routes>
+    <Routes basename={process.env.PUBLIC_URL}>
       <Route path="/" element={<Home />}/>
       <Route path="/home" element={<Token />}/>
       <Route path="/box" element={<Box />}/>
