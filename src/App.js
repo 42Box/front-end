@@ -1,4 +1,5 @@
 import {
+  HashRouter
   BrowserRouter as Router,
   Routes,
   Route
@@ -8,13 +9,13 @@ import Box from './routes/Box'
 import Token from './Token'
 
 function App() {
-  return <Router>
-    <Routes basename={process.env.PUBLIC_URL}>
+  return <HashRouter>
+    <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/home" element={<Token />}/>
       <Route path="/box" element={<Box />}/>
     </Routes>
-  </Router>
+  </HashRouter>
 }
 
 export default App;
