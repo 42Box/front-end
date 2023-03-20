@@ -16,9 +16,9 @@ function Coalition({ coalition }) {
     }, []);
     return (
         <div>
-            <img className={styles.layer1} src="/images/png/tree.png" />
-            <img className={styles.layer2} src="/images/png/inside_box.png" />
-            <img className={styles.layer3} src="/images/png/42box_logo.png" />
+            <img className={styles.layer1} src={process.env.PUBLIC_URL + "/images/png/tree.png"} />
+            <img className={styles.layer2} src={process.env.PUBLIC_URL + "/images/png/inside_box.png"} />
+            <img className={styles.layer3} src={process.env.PUBLIC_URL + "/images/png/42box_logo.png"} />
             {/* {coalition !== undefined
                 ? <img className={styles.layer3} src="/images/png/42box_logo.png" />
                 : null

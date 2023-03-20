@@ -61,7 +61,7 @@ function Home () {
         <div className={styles.background}>
             { token && loading ?
             <div>
-                <img className={styles.imageSearching} src="/images/png/searching.png" />
+                <img className={styles.imageSearching} src={process.env.PUBLIC_URL + "/images/png/searching.png"} />
                 <h1 className={styles.loading}>Loading...</h1>
             </div>
             :
