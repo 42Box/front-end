@@ -23,14 +23,12 @@ function Home () {
         return <div>Error loading image</div>
     }
     return (
-        <div>
+        <div className={styles.background}>
         {loaded ?
-            <div className={styles.background}>
-                <Body />
-            </div>
+            <Body />
         :
             <div>
-                <img className={styles.imageSearching} src="/images/png/searching.png" />
+                <img className={styles.imageSearching} src={process.env.PUBLIC_URL + "/images/png/searching.png"} />
                 <h1 className={styles.loading}>Loading...</h1>
             </div>
         }
