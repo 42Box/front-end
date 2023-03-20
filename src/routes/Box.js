@@ -1,9 +1,5 @@
 import styles from './Box.module.css'
 function Box() {
-    const onClick = () => {
-        localStorage.removeItem('token')
-        localStorage.removeItem('urls')
-    }
     return (
         <div>
             {/* backgroundBegie */}

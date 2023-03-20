@@ -26,7 +26,7 @@
 
 .teamInfoFooter {
 	position: absolute;
-	bottom: -850px;
+	bottom: -900px;
 	left: 250px;
 	color: rgb(181, 179, 179);
 	text-align: center;
@@ -63,7 +63,7 @@
 .imageSearching {
 	position: absolute;
 	z-index: 20;
-	top: 1100px;
+	top: 1000px;
 	left: 120px;
 	width: 530px;
 	text-align: center;
@@ -76,7 +76,7 @@
 	z-index: 20;
 	text-align: center;
 	font-family: 'Jeju Myeongjo', serif;
-	top: 1500px;
+	top: 1400px;
 	left: 310px;
 	line-height: 30px;
 	color: antiquewhite;
