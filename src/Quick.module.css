@@ -135,7 +135,7 @@
     margin-right: 7px;
     border-radius: 10px;
     text-align: center;
-    font-family: serif;
+    font-family: 'Lato', sans-serif;
     border-color: antiquewhite;
 }
 
@@ -168,7 +168,6 @@
 }
 
 .custom_btn {
-    background-color: antiquewhite;
     width: 300px;
     height: 30px;
     margin-top: 15px;
@@ -198,6 +197,7 @@
     perspective: 230px;
   }
   .btn1 span {
+    color:rgba(73, 73, 73);
     background-color: antiquewhite;
     overflow: hidden;
     display: block;
