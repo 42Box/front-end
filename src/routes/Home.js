@@ -27,7 +27,6 @@ function Home () {
         <div className={styles.background}>
         {loaded ?
         <div>
-            <Nav />
             <Body />
         </div>
         :
