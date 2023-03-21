@@ -10,6 +10,10 @@ body {
 	height: 3000px;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 /*
 .backgroundGreen{
 	background:#047470;
