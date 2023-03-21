@@ -75,6 +75,7 @@
 
 /* coalition box */
 .coalition {
+    line-height: 25px;
     position: absolute;
     width: 370px;
     height: 200px;
