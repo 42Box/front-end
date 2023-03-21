@@ -195,6 +195,7 @@
     perspective: 230px;
   }
   .btn1 span {
+    overflow: hidden;
     display: block;
     position: absolute;
     width: 300px;
