@@ -136,6 +136,7 @@
     border-radius: 10px;
     text-align: center;
     font-family: serif;
+    border-color: antiquewhite;
 }
 
 .quick {
@@ -167,13 +168,14 @@
 }
 
 .custom_btn {
+    background-color: antiquewhite;
     width: 300px;
     height: 30px;
     margin-top: 15px;
     margin-left: 20px;
     margin-right: 30px;
     padding: 10px 25px;
-    border: 2px solid #4b4b4b;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
@@ -196,12 +198,13 @@
     perspective: 230px;
   }
   .btn1 span {
+    background-color: antiquewhite;
     overflow: hidden;
     display: block;
     position: absolute;
     width: 300px;
     height: 30px;
-    border: 2px solid #4b4b4b;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     margin:0;
     text-align: center;
