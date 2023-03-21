@@ -26,7 +26,7 @@
 
 .teamInfoFooter {
 	position: absolute;
-	bottom: -900px;
+	top: 1600px;
 	left: 250px;
 	color: rgb(181, 179, 179);
 	text-align: center;

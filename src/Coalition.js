@@ -7,6 +7,7 @@ function Coalition() {
         setMemo(event.target.value);
         localStorage.setItem("memo", event.target.value);
     };
+
     useEffect(() => {
         const storedMemo = localStorage.getItem("memo");
         if (storedMemo) {
