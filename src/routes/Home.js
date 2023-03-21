@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from '../Home.module.css';
 import Body from '../Body';
+import Nav from '../Nav';
 
 function Home () {
     function useImage(src) {
@@ -25,7 +26,10 @@ function Home () {
     return (
         <div className={styles.background}>
         {loaded ?
+        <div>
+            <Nav />
             <Body />
+        </div>
         :
             <div>
                 <img className={styles.imageSearching} src={process.env.PUBLIC_URL + "/images/png/searching.png"} />
